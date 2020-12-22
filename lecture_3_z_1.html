@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Lecture 2-1</title>
+    <meta charset="utf-8">
+    <script src="task_1.js"></script>
+    <script>
+        var arr = ["test", "fest", "gest"];
+
+        arr.forEach(function(item, i, arr) {
+            console.log(i + ": " + item + " (массив:" + arr + ")");
+            arr[i] = item + ' edit';
+        });
+        myForEach(arr,
+            function(item, i, arr) {
+                console.log(i + ": " + item + " (массив:" + arr + ")");
+                arr[i] = item + ' - edit 2';
+            }
+        );
+        myForEach(arr, function(item, i, arr) {
+            console.log(item);
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Лекция 3 задача 1</h2>
+    <h3>Вывод в консоли</h3>
+</body>
+
+</html>
